@@ -4,9 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+    <title>轮播图</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .slider{
+            width: 1200px;
+            height: 360px;
+            margin: 0 auto;
+
+            position: relative;
+        }
+
+        .left-arrow, .right-arrow{
+            width: 30px;
+            height: 30px;
+
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+        }
+
+        .left-arrow{
+            left: 10px;
+        }
+
+        .right-arrow{
+            right: 10px;
+        }
+
+        .indicator{
+            width: 80px;
+            height: 14px;
+            background-color: rgba(255, 255, 255, .3);
+
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -40px;
+            border-radius: 10px;
+        }
+
+        .indicator>li{
+            float: left;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            margin: 2px 0 2px 5px;
+            border-radius: 100%;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="slider">
+        <img src="images/s1.jpg" alt="">
+        <a href="javascript:;" class="left-arrow">
+            <img src="images/left-circle.png" alt="" srcset="">
+        </a>
+        <a href="javascript:;" class="right-arrow">
+            <img src="images/right-circle.png" alt="" srcset="">
+        </a>
+        <ul class="indicator">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
 </body>
 </html>
